@@ -1,0 +1,319 @@
+h1.post-title 
+    border-bottom: 2px solid #f2f2f2
+    position: relative
+    padding-bottom: 4px
+
+h1.post-title:before 
+    content: url(../img/Star.png)
+    position: absolute
+    left: -56px
+    top: -3px
+
+.top-img img 
+    width: 100%
+
+main
+    background: #f2f2f2
+
+.content
+    width: 940px
+    margin: 0 auto
+    position: relative
+    top: -84px
+    background: #fff
+
+.post-img
+    float: left
+    margin: 0 20px 0 -80px
+    img 
+        display: inherit
+        border: 5px solid #f2f2f2
+        border-left: 0
+
+.post-info
+    border-top: 2px solid #f2f2f2
+    border-bottom: 2px solid #f2f2f2
+    padding: 16px 0
+
+span > i 
+    margin-right: 5px
+
+.post-info > span:nth-child(2)
+    margin-right: 66px
+
+.post-info > span:nth-child(1)
+    margin-right: 52px
+    margin-left: 3px
+
+.post-content
+    padding: 45px 80px
+
+.post-text
+    margin: 11px 0 0
+
+// comments styles
+section.comments 
+    margin-top: 35px
+
+.comment-block
+    margin-top: 40px
+    padding-bottom: 0
+    border-bottom: 2px solid #f2f2f2
+
+.comment-container:after,
+.comment-block:after,
+article.comment:after,
+.form-block:after,
+.reply-comment-container:after
+    content: ''
+    clear: both
+    display: table 
+ 
+.comment-container .user-avatar,
+.reply-comment-container .user-avatar
+    width: 88px
+    height: 88px
+    margin-right: 22px
+    border-radius: 6px
+    border: 2px solid rgb(235,237,238)
+    padding: 2px
+    img 
+        max-width: 100%
+        min-width: 100%
+        border-radius: 6px
+
+.reply-comment-container .user-avatar
+    width: 68px
+    height: 68px
+
+.comment-container > div,
+.reply-comment-container > div
+    float: left
+
+.comment-container .comment-form,
+.comment-container .comment-content,
+.form-block .comment-form,
+.reply-comennts
+    width: 670px
+    float: right
+
+.reply-comment-container .comment-content
+    width: 580px
+    float: right
+
+article.comment 
+    margin-top: 40px
+
+.reply-comment-container:not(:last-child) 
+    margin-bottom: 10px
+
+.comment-btns > span i 
+    transition: 0.3s
+
+.comment-btns > span 
+    cursor: pointer
+    margin-right: 6px
+    transition: 0.3s
+    &:hover
+        color: #f1c40f
+        i 
+            color: #f1c40f
+ 
+.comment-btns > span > i 
+    margin-right: 2px
+
+.comment-btns 
+    margin-top: 11px
+
+.comment-author-name 
+    font-family: 'Stag-Medium'
+    color: rgb(69, 69, 69)
+    font-size: 17px
+    margin-right: 8px
+
+.share-to 
+    margin-right: 8px
+
+.comment-author 
+    margin-top: 2px
+
+.comment-text
+    margin-top: 11px
+
+.cancel-form 
+    float: right
+    cursor: pointer
+    &:hover
+        color: #f1c40f
+        i 
+            color: #f1c40f
+
+
+.reply-block-btns
+    margin-bottom: 20px    
+
+.reply-comment-container 
+    margin-top: 20px
+
+article.comment .form-block
+    margin-top: 10px
+    display: none
+
+.comment-container
+    padding-bottom: 10px
+
+.load-btn-container
+    position: relative
+
+.load-comments 
+    color: rgb(182,182,182)
+    font-size: 17px
+    background: transparent
+    border: 2px solid #f2f2f2
+    transition: 0.3s
+    cursor: pointer
+    display: block
+    padding: 8px 0
+    margin: 0 auto
+    width: 182px
+    margin-top: 50px
+    font-family: "Stag-Book"
+    &:hover
+        color: #454545
+        background: #ffd800
+    &:focus, &:active
+        border: 2px solid #f2f2f2
+        outline: none
+        box-shadow: none
+    &:before
+        content: ""
+        height: 2px
+        position: absolute
+        background: #f2f2f2
+        width: calc(50% - 110px)
+        left: 0
+        top: 0
+        bottom: 0
+        margin: auto
+    &:after
+        content: ""
+        height: 2px
+        position: absolute
+        background: #f2f2f2
+        width: calc(50% - 110px)
+        right: 0
+        top: 0
+        bottom: 0
+        margin: auto    
+
+// media 
+@media screen and (max-width: 992px)
+    .content
+        width: 740px
+    
+    .comment-container .comment-form,
+    .comment-container .comment-content,
+    .form-block .comment-form,
+    .reply-comennts 
+        width: 465px
+
+    .reply-comment-container .comment-content 
+        width: 365px
+    
+    .reply-comment-container .comment-content .comment-author-name
+        display: block
+        margin-right: 0
+        margin-bottom: 5px
+
+@media screen and (max-width: 767px)
+    .content
+        width: 90%
+    .post-img 
+        float: none
+        margin: 0 0 20px 0
+        img 
+            margin: 0 auto
+            max-width: 100%
+            border-left: 5px solid #f2f2f2
+    
+    .post-info > span
+        display: block
+        text-align: center
+ 
+    .post-info > span:nth-child(1),
+    .post-info > span:nth-child(2)
+        margin: 0 0 10px 0
+
+    .comment-container .user-avatar,
+    .reply-comment-container .user-avatar
+        display: none
+
+    .comment-container .comment-form,
+    .comment-container .comment-content,
+    .form-block .comment-form
+        width: 100%
+        float: none
+
+    .reply-comennts
+        width: 90%
+        margin-left: 10%
+    
+    .reply-comment-container .comment-content 
+        width: 100%
+    
+    .post-content 
+        padding: 45px 40px
+
+    h1.post-title:before
+        position: initial
+        display: inline-block
+        vertical-align: middle
+        margin-right: 10px
+
+    section.comments,
+    .comment-block
+        margin-top: 25px
+    
+@media screen and (min-width: 730px) and (max-width: 767px) and (orientation: landscape)
+    .comment-container .user-avatar,
+    .reply-comment-container .user-avatar
+        display: block
+
+    .comment-container .comment-form,
+    .comment-container .comment-content,
+    .form-block .comment-form
+        width: 460px
+        float: right
+    
+    .reply-comment-container .comment-content 
+        width: 430px
+
+
+@media screen and (max-width: 400px)
+    .comment-author-name
+        display: block
+        margin-bottom: 10px
+    
+    .post-content
+        padding: 30px 20px
+
+    h1.post-title:before
+        display: none
+    
+    .content
+        top: -50px
+    
+    .comment-btn
+        width: 120px
+        font-size: 15px
+        padding: 10px 8px
+    
+    .load-comments 
+        color: rgb(182,182,182)
+        font-size: 14px
+        width: 150px
+        margin-top: 25px
+        font-family: "Stag-Book"
+        &:before, &:after
+            width: calc(50% - 90px)
+        

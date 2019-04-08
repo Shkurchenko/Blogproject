@@ -1,0 +1,106 @@
+*
+    box-sizing: border-box
+
+body
+    font-family: 'Stag-Book'
+    font-size: 17px
+    color: rgb(69,69,69)
+
+h1 
+    font-family: 'Stag-Semibold'
+    font-size: 30px
+
+h2 
+    display: inline
+
+.hidden-title
+    display: none
+
+.date-post 
+    font-family: 'Stag-Medium'
+    display: inline-block
+    margin-top: 8px
+
+span, i
+    color: rgb(182,182,182)
+    font-size: 15px
+
+.span-bold
+    font-family: 'Stag-Medium'
+
+p 
+    line-height: 1.471
+    text-align: justify
+
+.post-text p 
+    padding-bottom: 25px
+
+textarea
+    width: 100%
+    height: 88px
+    font-size: 17px
+    padding: 13px 17px
+    font-family: "Stag-Book"
+    border: 2px solid rgb(235,237,238)
+    border-radius: 6px
+    resize: none
+
+textarea:focus, textarea:active
+    border: 2px solid #f1c40f
+    box-shadow: none
+    outline: none
+
+textarea.error, textarea.error:focus, textarea.error:active
+    border-color: red
+
+textarea.has-been-send, textarea.has-been-send:focus, textarea.has-been-send:active
+    border-color: green
+
+button:focus, button:active
+    border: 0
+    outline: none
+    box-shadow: none
+
+textarea::placeholder 
+    color: rgba(191,191,191,0.6)
+
+.has-been-send::placeholder
+    color: green
+
+.error::placeholder
+    color: red
+
+.comment-btn 
+    width: 140px
+    float: right
+    font-family: "Stag-Medium"
+    font-size: 17px
+    padding: 13px 10px
+    background: #f1c40f
+    border: 0
+    border-radius: 6px
+    cursor: pointer
+    margin-top: 7px
+    transition: 0.3s
+    &:hover
+        background: #deb510
+
+@media screen and (max-width: 767px)
+    span, i 
+        font-size: 14px
+    
+    h1
+        font-size: 25px
+
+    body 
+        font-size: 16px    
+
+@media screen and (max-width: 400px) 
+    span, i
+        font-size: 11px
+
+    h1
+        font-size: 22px
+
+    body 
+        font-size: 14px
