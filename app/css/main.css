@@ -103,7 +103,8 @@ textarea {
   border: 2px solid #ebedee;
   -webkit-border-radius: 6px;
           border-radius: 6px;
-  resize: none; }
+  resize: none;
+  overflow: hidden; }
 
 textarea:focus, textarea:active {
   border: 2px solid #f1c40f;
