@@ -135,7 +135,7 @@ $( document ).ready(function(){
         let editedText = $(this).siblings('textarea.text-comment').val();
         let parentCommentID = $(this).closest('article.comment').attr('value');
         let self = $(this);
-        console.log(editedText);
+
         if (editedText.length != 0) {
             $.ajax({
                 url: "http://frontend-test.pingbull.com/pages/shkurchenko.nikita@gmail.com/comments/" + parentCommentID + "",
