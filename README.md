@@ -1,3 +1,4 @@
+### run the command "gulp watch" in terminal for correct work
 # Test project
 
 ### Requirements
