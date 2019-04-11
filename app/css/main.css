@@ -61,13 +61,13 @@ table {
           box-sizing: border-box; }
 
 body {
-  font-family: 'Stag-Book';
+  font-family: "Stag-Book", Arial, Helvetica, sans-serif;
   font-size: 17px;
   color: #454545;
   background: #f2f2f2; }
 
 h1 {
-  font-family: 'Stag-Semibold';
+  font-family: "Stag-Semibold", Arial, Helvetica, sans-serif;
   font-size: 30px; }
 
 h2 {
@@ -77,16 +77,16 @@ h2 {
   display: none; }
 
 .date-post {
-  font-family: 'Stag-Medium';
+  font-family: "Stag-Medium", Arial, Helvetica, sans-serif;
   display: inline-block;
   margin-top: 8px; }
 
-span, i {
+span, i, time {
   color: #b6b6b6;
   font-size: 15px; }
 
 .span-bold {
-  font-family: 'Stag-Medium'; }
+  font-family: "Stag-Medium", Arial, Helvetica, sans-serif; }
 
 p {
   line-height: 1.471;
@@ -100,7 +100,7 @@ textarea {
   height: 88px;
   font-size: 17px;
   padding: 13px 17px;
-  font-family: "Stag-Book";
+  font-family: "Stag-Book", Arial, Helvetica, sans-serif;
   border: 2px solid #ebedee;
   -webkit-border-radius: 6px;
           border-radius: 6px;
@@ -164,7 +164,7 @@ textarea::placeholder {
 .comment-btn {
   width: 140px;
   float: right;
-  font-family: "Stag-Medium";
+  font-family: "Stag-Medium", Arial, Helvetica, sans-serif;
   font-size: 17px;
   padding: 13px 10px;
   background: #f1c40f;
@@ -180,7 +180,7 @@ textarea::placeholder {
     background: #deb510; }
 
 @media screen and (max-width: 767px) {
-  span, i {
+  span, i, time {
     font-size: 14px; }
   h1 {
     font-size: 25px; }
@@ -188,7 +188,7 @@ textarea::placeholder {
     font-size: 16px; } }
 
 @media screen and (max-width: 400px) {
-  span, i {
+  span, i, time {
     font-size: 11px; }
   h1 {
     font-size: 22px; }
@@ -232,10 +232,10 @@ main {
   border-bottom: 2px solid #f2f2f2;
   padding: 16px 0; }
 
-span > i {
+span > i, time > i {
   margin-right: 5px; }
 
-.post-info > span:nth-child(2) {
+.post-info > time:nth-child(2) {
   margin-right: 66px; }
 
 .post-info > span:nth-child(1) {
@@ -329,7 +329,7 @@ article.comment {
   margin-top: 11px; }
 
 .comment-author-name {
-  font-family: 'Stag-Medium';
+  font-family: "Stag-Medium", Arial, Helvetica, sans-serif;
   color: #454545;
   font-size: 17px;
   margin-right: 8px; }
@@ -381,7 +381,7 @@ article.comment .form-block {
   margin: 0 auto;
   width: 182px;
   margin-top: 50px;
-  font-family: "Stag-Book"; }
+  font-family: "Stag-Book", Arial, Helvetica, sans-serif; }
   .load-comments:hover {
     color: #454545;
     background: #ffd800; }
@@ -438,11 +438,13 @@ article.comment .form-block {
       margin: 0 auto;
       max-width: 100%;
       border-left: 5px solid #f2f2f2; }
-  .post-info > span {
+  .post-info > span, .post-info > time {
     display: block;
     text-align: center; }
   .post-info > span:nth-child(1),
-  .post-info > span:nth-child(2) {
+  .post-info > span:nth-child(2),
+  .post-info > time:nth-child(1),
+  .post-info > time:nth-child(2) {
     margin: 0 0 10px 0; }
   .comment-container .user-avatar,
   .reply-comment-container .user-avatar {
@@ -499,7 +501,7 @@ article.comment .form-block {
     font-size: 14px;
     width: 150px;
     margin-top: 25px;
-    font-family: "Stag-Book"; }
+    font-family: "Stag-Book", Arial, Helvetica, sans-serif; }
     .load-comments:before, .load-comments:after {
       width: -webkit-calc(50% - 90px);
       width: calc(50% - 90px); } }

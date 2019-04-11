@@ -2,13 +2,13 @@
     box-sizing: border-box
 
 body
-    font-family: 'Stag-Book'
+    font-family: $font_Stag_Book
     font-size: 17px
-    color: rgb(69,69,69)
+    color: $primary_color
     background: #f2f2f2
 
 h1 
-    font-family: 'Stag-Semibold'
+    font-family: $font_Stag_Semibold
     font-size: 30px
 
 h2 
@@ -18,16 +18,16 @@ h2
     display: none
 
 .date-post 
-    font-family: 'Stag-Medium'
+    font-family: $font_Stag_Medium
     display: inline-block
     margin-top: 8px
 
-span, i
-    color: rgb(182,182,182)
+span, i, time
+    color: $secondary_color
     font-size: 15px
 
 .span-bold
-    font-family: 'Stag-Medium'
+    font-family: $font_Stag_Medium
 
 p 
     line-height: 1.471
@@ -41,7 +41,7 @@ textarea
     height: 88px
     font-size: 17px
     padding: 13px 17px
-    font-family: "Stag-Book"
+    font-family: $font_Stag_Book
     border: 2px solid rgb(235,237,238)
     border-radius: 6px
     resize: none
@@ -53,10 +53,10 @@ textarea:focus, textarea:active
     outline: none
 
 textarea.error, textarea.error:focus, textarea.error:active
-    border-color: red
+    border-color: $error_color
 
 textarea.has-been-send, textarea.has-been-send:focus, textarea.has-been-send:active
-    border-color: green
+    border-color: $suc_color
 
 button:focus, button:active
     border: 0
@@ -67,15 +67,15 @@ textarea::placeholder
     color: rgba(191,191,191,0.6)
 
 .has-been-send::placeholder
-    color: green
+    color: $suc_color
 
 .error::placeholder
-    color: red
+    color: $error_color
 
 .comment-btn 
     width: 140px
     float: right
-    font-family: "Stag-Medium"
+    font-family: $font_Stag_Medium
     font-size: 17px
     padding: 13px 10px
     background: #f1c40f
@@ -88,7 +88,7 @@ textarea::placeholder
         background: #deb510
 
 @media screen and (max-width: 767px)
-    span, i 
+    span, i, time
         font-size: 14px
     
     h1
@@ -98,7 +98,7 @@ textarea::placeholder
         font-size: 16px    
 
 @media screen and (max-width: 400px) 
-    span, i
+    span, i, time
         font-size: 11px
 
     h1

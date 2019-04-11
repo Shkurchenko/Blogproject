@@ -9,8 +9,17 @@ const gulp       = require('gulp'),
     imagemin     = require('gulp-imagemin'),
     pngquant     = require('imagemin-pngquant'),
     cache        = require('gulp-cache'),
-    autoprefixer = require('gulp-autoprefixer');
+    autoprefixer = require('gulp-autoprefixer'),
+    babel        = require('gulp-babel');
 
+
+gulp.task('babel', () =>
+    gulp.src('app/js/*.js')
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
+        .pipe(gulp.dest('app/js'))
+);
 gulp.task('sass', function(){
     return gulp.src('app/sass/**/*.sass')
     .pipe(sass())
@@ -81,6 +90,9 @@ gulp.task('buildProject', async function(){
                     .pipe(gulp.dest('dist/fonts'));
 
     const buildJs = gulp.src('app/js/**/*')
+                    .pipe(babel({
+                        presets: ['@babel/env']
+                    }))
                     .pipe(gulp.dest('dist/js'));
     
     const buildHtml = gulp.src('app/*.html')

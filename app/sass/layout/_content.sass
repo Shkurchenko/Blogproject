@@ -35,10 +35,10 @@ main
     border-bottom: 2px solid #f2f2f2
     padding: 16px 0
 
-span > i 
+span > i, time > i 
     margin-right: 5px
 
-.post-info > span:nth-child(2)
+.post-info > time:nth-child(2)
     margin-right: 66px
 
 .post-info > span:nth-child(1)
@@ -126,7 +126,7 @@ article.comment
     margin-top: 11px
 
 .comment-author-name 
-    font-family: 'Stag-Medium'
+    font-family: $font_Stag_Medium
     color: rgb(69, 69, 69)
     font-size: 17px
     margin-right: 8px
@@ -166,7 +166,7 @@ article.comment .form-block
     position: relative
 
 .load-comments 
-    color: rgb(182,182,182)
+    color: $secondary_color
     font-size: 17px
     background: transparent
     border: 2px solid #f2f2f2
@@ -177,7 +177,7 @@ article.comment .form-block
     margin: 0 auto
     width: 182px
     margin-top: 50px
-    font-family: "Stag-Book"
+    font-family: $font_Stag_Book
     &:hover
         color: #454545
         background: #ffd800
@@ -236,12 +236,14 @@ article.comment .form-block
             max-width: 100%
             border-left: 5px solid #f2f2f2
     
-    .post-info > span
+    .post-info > span, .post-info > time
         display: block
         text-align: center
  
     .post-info > span:nth-child(1),
-    .post-info > span:nth-child(2)
+    .post-info > span:nth-child(2),
+    .post-info > time:nth-child(1),
+    .post-info > time:nth-child(2)
         margin: 0 0 10px 0
 
     .comment-container .user-avatar,
@@ -309,11 +311,11 @@ article.comment .form-block
         padding: 10px 8px
     
     .load-comments 
-        color: rgb(182,182,182)
+        color: $secondary_color
         font-size: 14px
         width: 150px
         margin-top: 25px
-        font-family: "Stag-Book"
+        font-family: $font_Stag_Book
         &:before, &:after
             width: calc(50% - 90px)
         
